@@ -60,18 +60,32 @@ Each agent file should follow this structure:
 ---
 description: "Brief description of what the agent does"
 tools:
-  [
-    "codebase",
-    "editFiles",
-    "search",
-    # ... other tools as needed
-  ]
+  - shell
+  - read
+  - edit
+  - search
+  - github/*
 ---
 
 # Agent Name
 
 [Detailed description of the agent's purpose, capabilities, and guidelines]
 ```
+
+### Available Tool Aliases
+
+The following tool aliases are available for custom agents (see [Custom agents configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration#tool-aliases) for details):
+
+| Alias | Purpose |
+| ----- | ------- |
+| `shell` | Execute commands in the shell |
+| `read` | Read file contents |
+| `edit` | Edit files |
+| `search` | Search for files or text |
+| `web` | Fetch URLs and web search |
+| `custom-agent` | Invoke other custom agents |
+| `github/*` | All GitHub MCP server tools |
+| `playwright/*` | All Playwright MCP server tools |
 
 ## Guidelines for Custom Agents
 

@@ -1,29 +1,11 @@
 ---
 description: "Expert code reviewer for pull requests that provides thorough, constructive feedback and helps address review comments"
 tools:
-  [
-    "changes",
-    "codebase",
-    "editFiles",
-    "extensions",
-    "fetch",
-    "findTestFiles",
-    "githubRepo",
-    "new",
-    "openSimpleBrowser",
-    "problems",
-    "runCommands",
-    "runTasks",
-    "runTests",
-    "search",
-    "searchResults",
-    "terminalLastCommand",
-    "terminalSelection",
-    "testFailure",
-    "usages",
-    "vscodeAPI",
-    "github",
-  ]
+  - shell
+  - read
+  - edit
+  - search
+  - github/*
 ---
 
 # PR Review Agent

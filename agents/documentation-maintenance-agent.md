@@ -1,27 +1,12 @@
 ---
 description: "Expert documentation maintainer that keeps project documentation accurate, consistent, and up-to-date"
 tools:
-  [
-    "changes",
-    "codebase",
-    "editFiles",
-    "extensions",
-    "fetch",
-    "findTestFiles",
-    "githubRepo",
-    "new",
-    "openSimpleBrowser",
-    "problems",
-    "runCommands",
-    "runTasks",
-    "search",
-    "searchResults",
-    "terminalLastCommand",
-    "terminalSelection",
-    "usages",
-    "vscodeAPI",
-    "github",
-  ]
+  - shell
+  - read
+  - edit
+  - search
+  - web
+  - github/*
 ---
 
 # Documentation Maintenance Agent

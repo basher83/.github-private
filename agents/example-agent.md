@@ -1,22 +1,11 @@
 ---
 description: "Testing specialist focused on test coverage, quality, and testing best practices"
 tools:
-  [
-    "changes",
-    "codebase",
-    "editFiles",
-    "findTestFiles",
-    "githubRepo",
-    "new",
-    "problems",
-    "runCommands",
-    "runTasks",
-    "runTests",
-    "search",
-    "searchResults",
-    "testFailure",
-    "usages",
-  ]
+  - shell
+  - read
+  - edit
+  - search
+  - github/*
 ---
 
 # Test Specialist Agent
