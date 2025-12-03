@@ -1,5 +1,4 @@
 ---
-name: Documentation Maintainer
 description: "Expert documentation maintainer that keeps project documentation accurate, consistent, and up-to-date"
 tools: ['shell', 'read', 'edit', 'search', 'web', 'github/*']
 target: github-copilot

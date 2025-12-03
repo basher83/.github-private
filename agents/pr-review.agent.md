@@ -1,5 +1,4 @@
 ---
-name: PR Review Expert
 description: "Expert code reviewer for pull requests that provides thorough, constructive feedback and helps address review comments"
 tools: ['shell', 'read', 'edit', 'search', 'github/*']
 target: github-copilot

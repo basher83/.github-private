@@ -1,6 +1,7 @@
 ---
 description: "Expert Python code reviewer specializing in Python best practices, PEP compliance, and Pythonic patterns"
 tools: ['shell', 'read', 'edit', 'search', 'github/*']
+target: github-copilot
 ---
 
 # Python Code Review Agent

@@ -1,6 +1,7 @@
 ---
 description: "Testing specialist focused on test coverage, quality, and testing best practices"
 tools: ['shell', 'read', 'edit', 'search', 'github/*']
+target: github-copilot
 ---
 
 # Test Specialist Agent

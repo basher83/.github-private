@@ -1,5 +1,4 @@
 ---
-name: Renovate Expert
 description: Specialist in Renovate configuration, troubleshooting, and centralized preset management for GitHub organizations
 tools: ['read', 'edit', 'search', 'github/*', 'web', 'shell']
 target: github-copilot
