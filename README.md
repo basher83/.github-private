@@ -59,12 +59,7 @@ Each agent file should follow this structure:
 ```markdown
 ---
 description: "Brief description of what the agent does"
-tools:
-  - shell
-  - read
-  - edit
-  - search
-  - github/*
+tools: ['shell', 'read', 'edit', 'search', 'github/*']
 ---
 
 # Agent Name

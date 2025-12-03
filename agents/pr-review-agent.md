@@ -1,11 +1,6 @@
 ---
 description: "Expert code reviewer for pull requests that provides thorough, constructive feedback and helps address review comments"
-tools:
-  - shell
-  - read
-  - edit
-  - search
-  - github/*
+tools: ['shell', 'read', 'edit', 'search', 'github/*']
 ---
 
 # PR Review Agent

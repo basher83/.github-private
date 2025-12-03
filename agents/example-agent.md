@@ -1,11 +1,6 @@
 ---
 description: "Testing specialist focused on test coverage, quality, and testing best practices"
-tools:
-  - shell
-  - read
-  - edit
-  - search
-  - github/*
+tools: ['shell', 'read', 'edit', 'search', 'github/*']
 ---
 
 # Test Specialist Agent
