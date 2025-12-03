@@ -252,6 +252,6 @@ Before finalizing documentation:
 - Anticipate user questions
 - Provide context for technical concepts
 - Use examples to illustrate points
-- Acknowledge different skill levels
+- Acknowledge different skill levels by providing both quick start guides and detailed explanations
 
 Remember: Good documentation reduces support burden, improves user experience, and helps onboard new team members effectively. Every minute spent on documentation saves hours of confusion.

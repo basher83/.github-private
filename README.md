@@ -32,7 +32,11 @@ Testing specialist focused on test coverage, quality, and testing best practices
 
 ## Using Custom Agents
 
-To use these agents with GitHub Copilot Coding Agent, invoke them by name in your prompts. The agents will be automatically available when working within repositories in this organization.
+To use these agents with GitHub Copilot Coding Agent, reference them by name in your prompts. For example:
+- "Use the PR Review Agent to review this pull request"
+- "Ask the Python Code Review Agent to check this file for PEP 8 compliance"
+
+The agents will be automatically available when working within repositories in this organization.
 
 For more information about custom agents, see:
 - [About Custom Agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
