@@ -2,7 +2,7 @@
 description: "Inspect this Python repo’s lint/test setup (via mise) and generate a ready-to-commit Fast PR Gate GitHub Actions workflow"
 target: github-copilot
 infer: false
-tools: ["read", "search", "edit", "runCommands", "problems", "changes"]
+tools: ["read", "search", "edit", "execute"]
 ---
 # Fast PR Gate (Python + mise)
 
@@ -57,6 +57,8 @@ If you fall back to conventional commands for any step, keep the workflow minima
 Create or update exactly one workflow:
 - Path: `.github/workflows/fast-pr-gate.yml`
 - Name: `Fast PR Gate`
+
+If `.github/` or `.github/workflows/` does not exist, create it before writing the workflow file (example: `mkdir -p .github/workflows`).
 
 ### Triggers
 - `pull_request` (for PR gating)
