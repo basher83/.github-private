@@ -25,10 +25,15 @@ Goal: author agent profiles that work best on **GitHub.com Copilot coding agent*
 
 - GitHub.com and IDEs read the same `.agent.md` files, but **not all frontmatter keys behave the same** everywhere.
 - Per GitHub Docs, **unrecognized tool names are ignored**. This makes it safe to include “future” tools as long as the important ones are present.
-- Per GitHub Docs, the following VS Code/IDE agent properties are **ignored on GitHub.com** today:
-  - `model`
-  - `argument-hint`
-  - `handoffs`
+
+## Tool alias notes
+
+- GitHub tool aliases can change over time.
+- Recent renames we’ve already had to accommodate in this repo:
+  - `problems` → `read/problems`
+  - `changes` → `search/changes`
+- For diagnostics access in agents/prompts, prefer `tools: ["read/problems"]`.
+- For reviewing the current diff/PR change set, prefer `tools: ["search/changes"]`.
 
 ## Recommended frontmatter pattern
 
@@ -37,6 +42,8 @@ For GitHub.com-first agents, use:
 - `target: github-copilot` so the intent is explicit.
 - A least-privilege `tools:` allowlist using **tool aliases**.
 - `infer: false` for specialized agents that should only be used when manually selected.
+
+Rule of thumb: if an agent includes `execute` (can run commands) and/or writes workflows/config, keep `infer: false` to avoid accidental auto-selection.
 
 Example template:
 
@@ -80,11 +87,9 @@ Repository-level agent profiles **cannot configure MCP servers** in the agent fi
 
 ## VS Code-compatibility strategy
 
-Even though GitHub.com ignores `model`/`handoffs` today, you can include them **without breaking GitHub.com**, and they may become useful later.
+In this repo, we bias strongly toward **GitHub.com-native frontmatter** to avoid validation errors.
 
-Two recommended approaches:
-
-### Approach A: GitHub.com-first (recommended today)
+### Approach A: GitHub.com-first (recommended)
 
 Keep the frontmatter minimal and GitHub.com-native:
 
@@ -95,31 +100,6 @@ target: github-copilot
 tools: ["read", "search", "edit"]
 ---
 ```
-
-### Approach B: Dual-target future-proofing
-
-Add IDE-only niceties, knowing GitHub.com will ignore them:
-
-```yaml
----
-name: "Fast PR Gate Generator"
-description: "Generate a Fast PR Gate workflow using mise tasks."
-target: github-copilot
-infer: false
-tools: ["read", "search", "edit"]
-
-# IDE-focused keys (currently ignored on GitHub.com)
-model: "gpt-5.2-preview"
-argument-hint: "Tell me the default branch and desired gate tasks"
-handoffs:
-  - label: "Review workflow"
-    agent: "reviewer"
-    prompt: "Review the generated workflow for correctness and minimal permissions."
-    send: false
----
-```
-
-If you use this approach, keep IDE-only keys clearly grouped and ensure the GitHub.com-critical keys are present and correct.
 
 ## Guardrails to include in the body
 
