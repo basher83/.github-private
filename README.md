@@ -8,7 +8,8 @@ What began as casual suggestions turned into a full-blown emotional arc. Behold:
 
 ![The 5 Stages of Software Developer Grief — Copilot edition](https://i.ytimg.com/vi/c1pU8Q8nLs0/maxresdefault.jpg)
 
-### Stage 1: **Confidence**  
+## Stage 1: **Confidence**
+
 `copilot/add-ci-workflow`  
 
 Ah, the golden days. Fresh prompt, high hopes. Copilot struts in like: "I've got this. One workflow, coming right up."  
@@ -17,6 +18,7 @@ Pure optimism. "This human knows what they're doing."
 ![Stage 1: Denial — "It's fine, this will work on the first try"](https://i.programmerhumor.io/2025/11/33adf18b902c438f3663ce774b48459438e8b4e2e979e6d31b7e2713359f39ff.jpeg)
 
 ### Stage 2: **Persistence (with a side of shade)**  
+
 `copilot/create-ci-workflow-another-one`  
 `copilot/create-ci-workflow-yet-again`  
 `copilot/create-ci-workflow-again`  
@@ -28,6 +30,7 @@ Classic dev move: "Just one more tweak and it'll be perfect." (Narrator: It was 
 ![The duality of dev life: "It works!" vs. "Why won't it work?!"](https://i.programmerhumor.io/2025/10/411a7f41c60dc1783f24e3d921a898dc94c86ad09c739157c2653f28d3ab5bcb.png)
 
 ### Stage 3: **Desperation**  
+
 `copilot/create-ci-workflow-one-more-time`  
 
 We're in the bargaining phase now. Copilot's basically whispering:  
@@ -37,6 +40,7 @@ Meanwhile, the branch list is starting to look like a cry for help.
 ![Meanwhile, the repo's branch history...](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Cv8eflMAE_HBXwMocaF_sRaF0_LnQ-p_iA&s)
 
 ### Stage 4: **Existential Pleading**  
+
 `copilot/create-ci-workflow-please-work`  
 
 **PEAK COMEDY.**  
@@ -48,6 +52,7 @@ Copilot has abandoned all pretense. It's not assisting anymore — it's **prayin
 ![Me vs. the prompt I swore would only need one more tweak](https://i.programmerhumor.io/2025/07/a38e0d5e56aae4bf7242f6a10ca7b1af1ab08dd5c81307aede4a4bc273a4b1ba.jpeg)
 
 ### Epilogue: **Acceptance (and Victory)**  
+
 And on `please-work`... it finally did.  
 v4 delivered the perfect, minimal, lightning-fast workflow. Static steps. `--frozen`. Rich summary. Multi-model certified.
 
@@ -62,4 +67,11 @@ You're either breaking reality... or you've finally won.
 
 ![The real MVP: persistence (and a slightly traumatized Copilot)](https://i.programmerhumor.io/2025/06/805073f02c4e4a29cd564fef398742ff730e5e272dede6b29cbad00ee3511a65.jpeg)
 
-Now go forth and prompt responsibly. 🚀😂
+## The final saga
+
+And now Copilot — the very tool that generated it via our agent — shows up 2 minutes later like:
+"Actually... about that group name... it's kinda bloated. Just saying."
+
+![The final saga](docs/testing/self-reflection.png)
+
+Now go forth and prompt responsibly. 🚀😂😂
