@@ -53,7 +53,6 @@ v4 delivered the perfect, minimal, lightning-fast workflow. Static steps. `--fro
 
 Copilot didn't name the next one (yet). Maybe it's recovering. Or maybe it's waiting... watching... ready to drop `copilot/touch-grass-human` if I dare touch the prompt again.
 
-![The smoking gun: Copilot's branch naming evolution captured in all its glory](docs/testing/smoking-gun.png)
 Moral of the story: Prompt engineering is pain. But when your AI starts *begging* for mercy?  
 You're either breaking reality... or you've finally won.
 
